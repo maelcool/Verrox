@@ -10,17 +10,21 @@
  * governing permissions and limitations under the License.
  */
 
+ @import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Shrikhand&display=swap');
+
  :root {
   /* colors */
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
-  --background-color: #000;
+  --background-color: rgb(26, 26, 26);
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
-  --text-color: #000;
+  --text-color: #e7e7e7;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
+  --body-font-family: 'Shrikhand', roboto-fallback;
+  --heading1-font-family: 'Rubik Iso', roboto-fallback;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
@@ -79,7 +83,16 @@ header {
   height: var(--nav-height);
 }
 
-h1, h2, h3,
+h1{
+  font-family: var(--heading1-font-family);
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 1em;
+  margin-bottom: .5em;
+  scroll-margin: calc(var(--nav-height) + 1em);
+}
+
+h2, h3,
 h4, h5, h6 {
   font-family: var(--heading-font-family);
   font-weight: 600;
